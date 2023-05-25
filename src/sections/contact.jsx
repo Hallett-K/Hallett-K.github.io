@@ -1,11 +1,17 @@
-import React from "react"
+import React from 'react'
+import styled from 'styled-components'
 
-function Contact() {
+const Section = styled.div`
+  height: 100vh;
+  background-color: #b925be;
+`
+
+const Contact = () => {
 
     return (
-      <div>
+      <Section>
         Contact
-      </div>
+      </Section>
     )
 }
   
