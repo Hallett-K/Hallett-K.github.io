@@ -78,6 +78,7 @@ Error generating stack: `+o.message+`
   scrollbar-width: none;
   color: white;
   background: url('./img/bkg.jpg') no-repeat center center fixed;
+  background-size: fit;
   &::-webkit-scrollbar {
     display: none;
   }
