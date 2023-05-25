@@ -15,13 +15,26 @@ scene.add(cube);
 
 camera.position.z = 5;
 
-const animate = function () {
-    requestAnimationFrame(animate);
-    
+let clock = new THREE.Clock();
+let deltatime = 0;
+let interval = 1 / 60;
+
+const render = function () {
     cube.rotation.x += 0.01;
     cube.rotation.y += 0.01;
     
     renderer.render(scene, camera);
 };
 
-animate();
+const update = function () {
+    requestAnimationFrame(update);
+
+    deltatime += clock.getDelta();
+
+    if (deltatime >= interval) {
+        render();
+        deltatime = deltatime % interval;
+    }
+};
+
+update();
