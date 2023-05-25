@@ -77,7 +77,7 @@ Error generating stack: `+o.message+`
   overflow-y: scroll;
   scrollbar-width: none;
   color: white;
-  background: url("./img/bkg.jpg")
+  background: url('./../img/bkg.jpg') no-repeat center center fixed;
   &::-webkit-scrollbar {
     display: none;
   }
